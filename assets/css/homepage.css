@@ -1,0 +1,27 @@
+/* Add styles to all elements */
+* {
+	margin: 0; /* remove margin from all elements */
+	padding: 0; /* remove padding from all elements */
+	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+}
+
+/* Write your CSS below (feel free to change the styles already here) */
+body {
+	font-family: sans-serif;
+	background-color: yellow;
+}
+header {
+	padding: 20px;
+	margin: 40px;
+	background-color: white;
+	border: 5px solid black;
+}
+nav {
+	padding: 20px;
+	margin: 40px;
+	background-color: white;
+	border: 5px solid black;
+}
+ul {
+	margin: 20px;
+}

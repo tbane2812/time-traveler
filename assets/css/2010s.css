@@ -1,0 +1,16 @@
+/* Add styles to all elements */
+* {
+	margin: 0; /* remove default margin from all elements */
+	padding: 0; /* remove default padding from all elements */
+	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+}
+
+/* Write your CSS below (feel free to change the styles already here) */
+@font-face {
+	font-family: "AUTHENTIC Sans";
+	src: url("../fonts/authentic-sans-pro-60.woff2");
+}
+body {
+	font-family: "AUTHENTIC Sans", sans-serif;
+	background-color: hsl(180deg, 100%, 50%);
+}
