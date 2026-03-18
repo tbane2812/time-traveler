@@ -6,9 +6,10 @@
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
+
 body {
 	font-family: sans-serif;
-	background-color: yellow;
+	background-color: rgb(32, 72, 102);
 }
 header {
 	padding: 20px;
@@ -17,11 +18,64 @@ header {
 	border: 5px solid black;
 }
 nav {
+display: flex;
+flex-direction: column;
+gap:40px;
 	padding: 20px;
 	margin: 40px;
 	background-color: white;
-	border: 5px solid black;
+	border: 5px solid rgb(255, 255, 255);
+	align-items: center;
 }
+
 ul {
 	margin: 20px;
 }
+.parent{
+	border: 2px solid black;
+	display:flex;
+	flex-grow:1;
+
+	
+
+
+}
+.parent:hover {
+flex-grow: 200
+}
+
+
+.web1 {
+	font-size: 20px;
+	background-color: hsl(202, 75%, 88%);
+	color: aliceblue;
+	transition: background-color 2s;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.web1:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(249, 136, 187);
+border:  dotted rgb(255, 255, 255);}
+.web2 {
+	font-size: 20px;
+	color: aliceblue;
+	background-color: hsl(20, 94%, 27%);
+	transition: background-color 2s;
+
+}
+.web2:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(249, 136, 187);
+border:  dotted rgb(255, 255, 255);}
+.web3 {
+	font-size: 20px;
+	color: aliceblue;
+	background-color: hsl(349, 78%, 45%);
+	transition: background-color 2s;
+
+}
+.web3:hover{
+	background-color: rgb(255, 255, 255);
+	color: rgb(249, 136, 187);
+border:  dotted rgb(255, 255, 255);}

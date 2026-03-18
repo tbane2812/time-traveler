@@ -1,16 +1,119 @@
 /* Add styles to all elements */
 * {
-	margin: 0; /* remove default margin from all elements */
-	padding: 0; /* remove default padding from all elements */
-	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+	margin: 0;
+	/* remove default margin from all elements */
+	padding: 0;
+	/* remove default padding from all elements */
+	box-sizing: border-box;
+	/* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+}
+
+@font-face {
+	font-family: "sabrina";
+	src: url("../fonts/sabrina/SABRINA_.TTF");
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
-@font-face {
-	font-family: "AUTHENTIC Sans";
-	src: url("../fonts/authentic-sans-pro-60.woff2");
-}
+
 body {
-	font-family: "AUTHENTIC Sans", sans-serif;
-	background-color: hsl(180deg, 100%, 50%);
+	font-family: "sabrina";
+	background-color: hsl(349, 78%, 45%);
+	color: rgb(115, 27, 156);
+}
+
+.parent {
+	display: flex;
+	gap: 100px;
+	flex-direction: column;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: auto;
+
+}
+
+p {
+	border: 20px dotted rgba(250, 198, 198, 0.795);
+	flex-grow: 1;
+	transition: 2s;
+}
+
+p:hover {
+
+	flex-grow: 150;
+
+}
+
+@media only screen and (mx-width: 300px) {
+	body {
+		background-color: black;
+
+	}
+
+}
+
+body:hover {
+	background-color: aliceblue;
+	color: aliceblue
+}
+
+
+.intro {
+	font-size: 20px;
+	color: aliceblue;
+	background-color: hsl(349, 78%, 45%);
+	transition: background-color 2s;
+
+
+
+}
+
+.intro:hover {
+	background-color: rgb(255, 243, 131);
+	color: rgb(249, 136, 187);
+	border: dotted rgb(255, 255, 255);
+
+}
+
+.web1 {
+	font-size: 20px;
+	background-color: hsl(349, 78%, 45%);
+	color: aliceblue;
+	transition: background-color 2s;
+
+
+}
+
+.web1:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(249, 136, 187);
+	border: dotted rgb(255, 255, 255);
+}
+
+.web2 {
+	font-size: 20px;
+	color: aliceblue;
+	background-color: hsl(349, 78%, 45%);
+	transition: background-color 2s;
+
+}
+
+.web2:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(249, 136, 187);
+	border: dotted rgb(255, 255, 255);
+}
+
+.web3 {
+	font-size: 20px;
+	color: aliceblue;
+	background-color: hsl(349, 78%, 45%);
+	transition: background-color 2s;
+
+}
+
+.web3:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(249, 136, 187);
+	border: dotted rgb(255, 255, 255);
 }

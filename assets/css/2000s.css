@@ -1,12 +1,113 @@
 /* Add styles to all elements */
 * {
-	margin: 0; /* remove default margin from all elements */
-	padding: 0; /* remove default padding from all elements */
-	box-sizing: border-box; /* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
+	margin: 0;
+	/* remove default margin from all elements */
+	padding: 0;
+	/* remove default padding from all elements */
+	box-sizing: border-box;
+	/* fix width calculation, more info here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-sizing */
 }
 
 /* Write your CSS below (feel free to change the styles already here) */
 body {
-	font-family: monospace;
-	background-color: rgb(147, 246, 140);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background-color: lab(29.65% 25.56 5.05);
+	padding: 40px;
+
+}
+
+p {
+	padding: 30px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	color: lab(93.07% -5.37 -9.51);
+
+}
+
+.para {
+	background-color: lab(29.65% 25.56 5.05);
+	color: lab(100% 0.01 -0.01);
+	animation-name: stripes;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.para:hover {
+	color: rgb(80, 131, 175)
+}
+
+.parag {
+	background-color: lab(93.07% -5.37 -9.51);
+}
+
+.parag:hover {
+	color: rgb(18, 153, 94);
+}
+
+.intro {
+	font-size: 20px;
+	background-color: rgb(255, 255, 255);
+	transition: background-color 2s;
+
+
+
+}
+
+.intro:hover {
+	background-color: rgb(255, 255, 255);
+	border-style: groove;
+
+}
+
+.web1 {
+	font-size: 20px;
+	background-color: rgb(246, 244, 244);
+	transition: background-color 2s;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.web1:hover {
+	background-color: lab(93.07% -5.37 -9.51);
+	border-style: groove;
+}
+
+.web2 {
+	font-size: 20px;
+	background-color: rgb(255, 255, 255);
+	transition: background-color 2s;
+
+}
+
+.web2:hover {
+	background-color: lab(93.07% -5.37 -9.51);
+	border-style: dotted;
+}
+
+.web3 {
+	font-size: 20px;
+	background-color: rgb(255, 255, 255);
+	transition: background-color 2s;
+
+}
+
+.web3:hover {
+	background-color: lab(93.07% -5.37 -9.51);
+	border-style: groove;
+}
+
+@keyframes stripes {
+	0% {
+		font-size: 20px
+	}
+
+	50% {
+		font-size: 3px
+	}
+
+	100% {
+		font-size: 1px
+	}
 }
